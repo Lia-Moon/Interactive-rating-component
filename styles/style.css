@@ -12,6 +12,7 @@ regular 400 ou bold 700
     --light_grey: hsl(217, 12%, 63%);
     --medium_grey: hsl(216, 12%, 54%);
     --dark_blue: hsl(213, 19%, 18%);
+    --darker_blue: hsl(213, 19%, 11%);
     --very_dark_blue: hsl(216, 12%, 8%);
 }
 
@@ -24,15 +25,33 @@ body {
 }
 
 .rating__state--content , .thank__you__state--content {
+    display: grid;
     background-color: var(--dark_blue);
+    background-image: radial-gradient(at center top, var(--dark_blue), var(--darker_blue));
     width: 300px;
-    margin: 15% auto;
+    height: 320px;
+    margin: 12% auto;
     padding: 25px;
     border-radius: 20px;
 }
 
 .rating__state--content p, .thank__you__state--content p {
     margin-bottom: 20px;
+}
+
+.rating__state--content--star , .rating__state--content--selection p {
+    background-color: var(--dark_blue);
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center
+}
+
+.rating__state--content--star i {
+    color: var(--orange);
 }
 
 .rating__state--content--title , .thank__you__state--content--title {
@@ -47,25 +66,57 @@ body {
 
 .rating__state--content--selection {
     color: var(--medium_grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating__state--content--selection p:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .rating__state--content--submit--button {
-    color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 3px;
     border-radius: 20px;
     padding: 16px 0;
     border: none;
     font-weight: 700;
-    width: 90%;
+    width: 100%;
+}
+
+.rating__state--content--submit--button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 .thank__you__state--content {
     display: none;
 }
 
+.thank__you__state--content {
+    text-align: center;
+}
+
+.thank__you__state--content--image {
+    width: 130px;
+    margin: 10px auto 25px;
+}
+.thank__you__state--content--rating button {
+    background-color: var(--dark_blue);
+    color: var(--orange);
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
 .attribution { 
-    font-size: 11px; 
+    font-size: 10px; 
     text-align: center;
 }
 
@@ -74,5 +125,6 @@ body {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%);
+    color: var(--orange);
+    text-decoration: none;
 }

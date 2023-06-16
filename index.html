@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -19,19 +21,27 @@
   <main>
     <!-- Rating state start ------------------------------ -->
     <div class="rating__state--content">
+      <p class="rating__state--content--star"><i class="bi bi-star-fill"></i></p>
       <p class="rating__state--content--title">How did we do?</p>
       <p class="rating__state--content--comment">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
-      <p class="rating__state--content--selection">1 2 3 4 5</p>
+      <div class="rating__state--content--selection">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+      </div>
       <button class="rating__state--content--submit--button">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start ------------------------------ -->
     <div class="thank__you__state--content">
-      <p class="thank__you__state--content--rating">You selected <!-- Add rating here --> out of 5</p>
+      <img class="thank__you__state--content--image" src="./images/illustration-thank-you.svg" alt="Illustration">
+      <p class="thank__you__state--content--rating"><button>You selected <!-- Add rating here --> out of 5</button></p>
       <p class="thank__you__state--content--title">Thank you!</p>
-      <p class="thank__you__state--content--comment">We appreciate you taking the time to give a rating. If you ever need more support, don`t hesitate to get in touch!</p>
+      <p class="thank__you__state--content--comment">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </div>
     <!-- Thank you state end -->
 
