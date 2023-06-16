@@ -115,6 +115,10 @@ body {
     margin-bottom: 15px;
 }
 
+.changeButtonColor {
+    background-color: green;
+}
+
 .attribution { 
     font-size: 10px; 
     text-align: center;
