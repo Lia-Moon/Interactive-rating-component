@@ -47,7 +47,7 @@ body {
     border-radius: 100%;
     display: grid;
     justify-items: center;
-    align-items: center
+    align-items: center;
 }
 
 .rating__state--content--star i {
@@ -95,10 +95,6 @@ body {
 }
 
 .thank__you__state--content {
-    display: none;
-}
-
-.thank__you__state--content {
     text-align: center;
 }
 
@@ -106,18 +102,33 @@ body {
     width: 130px;
     margin: 10px auto 25px;
 }
-.thank__you__state--content--rating button {
+.thank__you__state--content--rating {
     background-color: var(--dark_blue);
     color: var(--orange);
-    padding: 8px 25px;
+    padding: 12px 15px 8px 15px;
     border: none;
     border-radius: 20px;
-    margin-bottom: 15px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.changeButtonColor {
-    background-color: green;
+.option1.changeButtonColor,
+.option2.changeButtonColor,
+.option3.changeButtonColor,
+.option4.changeButtonColor,
+.option5.changeButtonColor {
+    background-color: var(--light_grey);
+    color: var(--white);
 }
+
+.rating__state--content.display__none {
+    display: none;
+}
+
+.thank__you__state--content.display__none {
+    display: none;
+}
+
 
 .attribution { 
     font-size: 10px; 

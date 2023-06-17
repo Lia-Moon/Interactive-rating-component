@@ -26,20 +26,20 @@
       <p class="rating__state--content--comment">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
       <div class="rating__state--content--selection">
-        <p class="option1">1</p>
-        <p class="option2">2</p>
-        <p class="option3">3</p>
-        <p class="option4">4</p>
-        <p class="option5">5</p>
+        <p class="option1" onclick="changeButtonColorOnClick()">1</p>
+        <p class="option2" onclick="changeButtonColorOnClick()">2</p>
+        <p class="option3" onclick="changeButtonColorOnClick()">3</p>
+        <p class="option4" onclick="changeButtonColorOnClick()">4</p>
+        <p class="option5" onclick="changeButtonColorOnClick()">5</p>
       </div>
-      <button class="rating__state--content--submit--button">Submit</button>
+      <button class="rating__state--content--submit--button" id="submitButton">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start ------------------------------ -->
-    <div class="thank__you__state--content">
+    <div class="thank__you__state--content display__none">
       <img class="thank__you__state--content--image" src="./images/illustration-thank-you.svg" alt="Illustration">
-      <p class="thank__you__state--content--rating"><button>You selected <!-- Add rating here --> out of 5</button></p>
+      <p class="thank__you__state--content--rating">You selected <span class="thank__you__state--content--rating--selected">NUMBER</span> out of 5</p>
       <p class="thank__you__state--content--title">Thank you!</p>
       <p class="thank__you__state--content--comment">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </div>
