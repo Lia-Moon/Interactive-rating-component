@@ -33,6 +33,7 @@ body {
     margin: 12% auto;
     padding: 25px;
     border-radius: 20px;
+    box-shadow: 7px 8px 13px var(--dark_blue);
 }
 
 .rating__state--content p, .thank__you__state--content p {
