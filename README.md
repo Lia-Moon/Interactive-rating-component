@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I enjoy practicing JavaScript, reinforcing some and learning new ones.
+I enjoyed practicing JavaScript, reinforcing some and learning new ones.
 
 Examples:
 ```js
